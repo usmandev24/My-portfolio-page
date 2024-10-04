@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+body {
+  font-family:Lora, Georgia ;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #003;
+  z-index: 999;
+  overflow: none;
+  height: 3.5rem;
+
+}
+#top ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  padding-right: 0rem;
+}
+#navbar a {
+  margin-right: 1em;
+  text-decoration: none;
+  color: 
+ white;
+}
+#navbar a:focus, #navbar a:active , #navbar a:hover {
+  background: white;
+  color: black;
+  border-radius: 1px;
+}
+#container {
+  position: absolute;
+  top: 3.5rem;
+  left: 0;
+  right: 0;
+  height: calc(100% - 3.5rem);
+  overflow: scroll;
+  width: 100%
+
+
+}
+section {
+  padding-top: 2rem;
+}
+#welcome-section {
+  height: 100vh;
+  background: brown;
+  
+}
+#welcome {
+  position: relative;
+  top: 20%;
+  color: white;
+  font-size: 2rem;
+}
+#welcome span{
+  text-decoration: underlin;
+  color: gold
+}
+a {
+  display: block;
+  text-decoration:  none;
+}
+#projects {
+  background: #fbf;
+  padding-bottom: 1rem;
+}
+#projects ul  {
+  display: flex;
+  list-style-type: none;
+  flex-flow : row wrap;
+  justify-content: center;
+  background-color: #fbf;
+  width:90%;
+  margin: auto;
+  
+  
+}
+#projects ul li {
+  margin: 1rem;
+  flex: 1 1 27rem;
+  border-radius: 5px;
+  background: lightgrey;
+  
+}
+.project-title {
+  text-align: center
+}
+p, h1, h4, h3, h2 {
+  text-align: center;
+}
+#contact {
+  height: 90vh;
+background-color: lightgreen;
+margin-top:-1.5rem;
+
+}
+#contact * {
+  position : relative;
+  top: 25%;
+}
+#contact p {
+  font-size: 1.1rem
+}
+code {
+  font-size: 1.1rem;
+  border: 1px solid #777;
+  background: #777;
+  color: white;
+  padding: 2px 5px;
+  border-radius:  1px ;
+}
+h3, h2 {
+  color: brown;
+  
+}
+a:visited {
+  color: darkblue
+}
+  
+
+@media only screen and (max-width: 500px) { 
+ #projects ul  {
+   align-items: flex-start;
+  background-color: #fbf;
+  width:100%;
+  margin: -1rem auto;
+  overflow: none;
+  padding: 0;
+  
+  
+}
+#projects ul li {
+  
+  width: 100vw;
+  border-radius: 5px;
+  background: lightgrey;
+  overflow: none;
+  padding: 0;
+}
+}
